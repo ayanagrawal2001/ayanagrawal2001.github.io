@@ -161,7 +161,7 @@ h3 { font-size: var(--fs-h3) }
     grid-row: 2;
     text-align: left;
     position: relative;
-    width: calc(100% + 35em);
+    
 }
 
 .i-title-wrap { 
