@@ -254,7 +254,7 @@ h3 { font-size: var(--fs-h3) }
     }
 }*/
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 800px) { 
     .intro-desc { 
         display: none; 
     }
