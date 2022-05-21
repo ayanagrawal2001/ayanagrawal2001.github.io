@@ -149,17 +149,10 @@ h3 { font-size: var(--fs-h3) }
         position: relative;
         width: calc(100% + 35em);
     }
-
-    .color-bar { 
-        align-self: start;
-        grid-column: -1 / 1;
-        grid-row: 2;
-        text-align: left;
-        position: relative;
-        width: calc(100% + 35em);
-    }
-
-
+}
+.i-left {
+    align-items: center;
+    justify-content: center;
 }
 
 .i-l-wrap {
@@ -209,6 +202,29 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
 }
 
+@media screen and (max-width: 600px) {
+    .intro {
+      flex-direction: column;
+    }
+  
+    .i-l-wrap {
+    
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+    }
+  
+    .inro-desc{
+      display: none;
+    }
+  
+    .i-title-item {
+      justify-content: center;
+    }
+    
+  }
 
 
 
