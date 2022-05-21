@@ -197,7 +197,7 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .intro {
       flex-direction: column;
     }
