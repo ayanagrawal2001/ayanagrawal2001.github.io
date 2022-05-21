@@ -31,7 +31,7 @@
 @media (min-width: 800px) { 
     :root { 
         --fs-h1: 4.5rem; 
-        --f2-h2: 3.75rem; 
+        --f2-h2: 4rem; 
         --fs-h3: 1.5rem; 
         --fs-body: 1.125rem; 
 
@@ -254,16 +254,62 @@ h3 { font-size: var(--fs-h3) }
     }
 }*/
 
+@media screen and (max-width: 600px) { 
+    .intro-desc { 
+        display: none; 
+    }
+    .i { 
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* My Experiences */ 
 
 .about__me { 
     color: var(--clr-accent2); 
-    background-color: var(--clr-accent1);
+    background-color: white;
 }
 
 .my-experiences { 
-    background-color: var(--clr-light);
+    background-color: var(--clr-accent2);
+    background-image: url(../exp.jpeg);
+    background-size: cover;
     height: 100vh;
-    color: var(--clr-accent2);
+    color: var(--clr-light);
+    background-blend-mode: multiply;
+    text-align: center;
+}
 
+.section__title--experiences { 
+    color: var(--clr-light);
+    position: relative; 
+
+}
+
+.section__title--experiences::after { 
+    content: ''; 
+    display: block; 
+    width: 25%; 
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light); 
+    opacity: 0.35;
+}
+
+@media (min-width: 800px) { 
+    .experiences { 
+        display: flex; 
+        flex-direction: column;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .experience + .experience { 
+        margin-left: 2em;
+    }
+}
+
+.experience talic { 
+    font-style:  italic;
 }
