@@ -42,7 +42,7 @@
 
 body { 
     background: var(--clr-light);
-    color: var(--clr-dark);
+    color: var(--clr-light);
     margin: 0; 
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -101,7 +101,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__subtitle--about { 
-    background: var(--clr-accent);
+    background: var(--clr-light);
     font-family: var(--ff-primary);
     padding: 0.25em 0.5em;
 }
@@ -120,6 +120,12 @@ h3 { font-size: var(--fs-h3) }
         "img title"
         "img subtitle";
     grid-template-columns: min-content max-content;
+
+    
+}
+
+.i { 
+    background-color: var(--clr-accent1);
 }
 
 .intro__img { 
@@ -176,7 +182,7 @@ h3 { font-size: var(--fs-h3) }
     height: 50px;
     font-size: 30px;
     font-weight: bold;
-    color: white;
+    color: var(--clr-accent2);
     background: var(--clr-accent1);
     display: flex;
     align-items: center;
@@ -186,6 +192,7 @@ h3 { font-size: var(--fs-h3) }
 .intro-desc { 
     text-align: center;
     font-size: var(--fs-h3);
+    
 }
 
 /*@media screen and (max-width: 600px) {
@@ -247,4 +254,16 @@ h3 { font-size: var(--fs-h3) }
     }
 }*/
 
+/* My Experiences */ 
 
+.about__me { 
+    color: var(--clr-accent2); 
+    background-color: var(--clr-accent1);
+}
+
+.my-experiences { 
+    background-color: var(--clr-light);
+    height: 100vh;
+    color: var(--clr-accent2);
+
+}
