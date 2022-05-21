@@ -169,8 +169,6 @@ h3 { font-size: var(--fs-h3) }
 .i-title-wrap { 
     height: 100%;
     animation: move 10s ease-in-out infinite alternate;
-    display: inline-block; 
-    
 }
 
 @keyframes move {
