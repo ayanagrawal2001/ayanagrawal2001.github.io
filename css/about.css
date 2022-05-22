@@ -138,7 +138,7 @@
 }
 
 
-.img-ovr:hover { 
+.img-ovr:hover, .img-ovr:active { 
     opacity: 1;
     padding: 50px;
 }
