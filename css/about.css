@@ -1,8 +1,23 @@
+.ae { 
+    background-color: wheat;
+    height: 100%;
+    background-size: cover;
+}
+
 .about__me { 
     height: 100vh; 
     max-width: 1000px;
     margin: 0 auto;
-    
+    color: #303030;
+}
+.section__title--about { 
+    padding: 50px;
+}
+
+.section__subtitle--about { 
+    background: var(--clr-accent2);
+    font-family: var(--ff-primary);
+    padding: 0.25em 0.5em;
 }
 
 .pl {
@@ -10,13 +25,135 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
 }
 
 .pl-texts {
     width: 65%;
+    top: 10px; 
 }
 
 .pee {
     padding: 0px 0px 20px 0px;
-  }
+    top: 100px; 
+}
+
+@media (min-width: 600px) { 
+    .about__me { 
+        display: grid;
+        grid-template-columns: lfr 200px;
+        height: 100%;
+    }
+
+    .section__title--about, 
+    .section__subtitle--about { 
+        grid-column: 1;
+
+    }
+}
+
+.hobbies { 
+    
+     position: relative;
+     width: 100%;
+     height: 400px;
+     align-items: center;
+    justify-content: center;
+
+}
+
+.column { 
+    position: relative;
+    float: left;
+    width: 450px;
+    height: 394;
+    
+}
+
+.hobbies::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.hobbies-img { 
+    position: relative;
+    display: block;
+    width: 450px;
+    height: 394px;
+    padding: 25px;
+    border-radius: 50px;
+    
+}
+.hobbies-img2 { 
+
+    position: relative;
+    display: block;
+    width: 450px;
+    right: 450px;
+    top: 0; 
+    padding: 25px;
+}
+
+.img-title { 
+
+    position: absolute;
+    top: 0;
+    
+    width: 450px;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+
+}
+.img-ovr { 
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 400px;
+    height: 344px;
+    background: var(--clr-accent2); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.35s;
+    
+    border-radius: 25px;
+}
+
+.img-ovr__blur { 
+    background: var(--clr-accent2);
+    
+}
+
+.img-ovr > * { 
+    transform: translateY(30px);
+    transition: tranform 0.35s;
+}
+
+
+.img-ovr:hover { 
+    opacity: 1;
+    padding: 50px;
+}
+
+.img-ovr:hover > * { 
+    transform: translateY(0px);
+}
+
+.img-desc {
+    font-size: 1.25em;
+    
+}
+
+.im-st { 
+    background: var(--clr-accent2);
+    font-family: var(--ff-primary);
+    padding: .35em 5em;
+}

@@ -28,7 +28,7 @@
         
 }
 
-@media (min-width: 800px) { 
+/*@media (min-width: 800px) { 
     :root { 
         --fs-h1: 4.5rem; 
         --f2-h2: 4rem; 
@@ -36,7 +36,7 @@
         --fs-body: 1.125rem; 
 
     }
-}
+}*/
 
 /*  General Styles  */
 
@@ -108,8 +108,8 @@ h3 { font-size: var(--fs-h3) }
 
 /*  Intro Section  */ 
 
-.intro { 
-    /*display: flex;*/
+/*.intro { 
+    /*display: flex;
     height: 100vh;
 
     display: grid; 
@@ -122,10 +122,12 @@ h3 { font-size: var(--fs-h3) }
     grid-template-columns: min-content max-content;
 
     
-}
+}*/
 
 .i { 
     background-color: var(--clr-accent1);
+    display: flex;
+    height: 100vh;
 }
 
 .intro__img { 
@@ -137,11 +139,20 @@ h3 { font-size: var(--fs-h3) }
     max-height: 450px;
     position: relative;
     z-index: 2;
+    object-fit: cover;
+    position: absolute;
 }
 
 .i-left {
+    flex: 1;
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.i-right { 
+    flex: 1;
+    position: relative;
 }
 
 .i-l-wrap {
@@ -156,11 +167,11 @@ h3 { font-size: var(--fs-h3) }
     height: 50px;
     overflow: hidden;
     
-    align-self: start;
+    /*align-self: start;
     grid-column: -1 / 1;
     grid-row: 2;
     text-align: left;
-    position: relative;
+    position: relative;*/
     
 }
 
@@ -195,7 +206,7 @@ h3 { font-size: var(--fs-h3) }
     
 }
 
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
     .intro {
       flex-direction: column;
     }
@@ -222,7 +233,7 @@ h3 { font-size: var(--fs-h3) }
 
     }
     
-  }
+  }*/
 
   /*@media (min-width: 600px) { 
     .intro { 
@@ -253,6 +264,7 @@ h3 { font-size: var(--fs-h3) }
         width: calc(100% + 35em);
     }
 }*/
+
 
 @media screen and (max-width: 800px) { 
     .intro-desc { 
@@ -324,7 +336,7 @@ h3 { font-size: var(--fs-h3) }
         grid-template-columns: lfr 200px;
     }
 
-    .section__subtitle--about, 
+    .section__title--about, 
     .section__subtitle--about { 
         grid-column: 1;
 

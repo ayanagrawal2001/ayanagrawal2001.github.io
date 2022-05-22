@@ -1,0 +1,26 @@
+.my-experiences { 
+    position: relative;
+    background-color: var(--clr-accent2);
+    /*background-image: url(../exp.jpeg);*/
+    background-size: cover;
+    height: 100vh;
+    color: var(--clr-light);
+    background-blend-mode: multiply;
+    text-align: center;
+}
+
+.section__title--experiences { 
+    color: var(--clr-light);
+    position: relative; 
+
+}
+
+.section__title--experiences::after { 
+    content: ''; 
+    display: block; 
+    width: 25%; 
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light); 
+    opacity: 0.35;
+}
