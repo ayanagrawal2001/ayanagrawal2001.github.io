@@ -193,9 +193,11 @@ section {
       padding: 35px;
       
     }
+
     .i-bg {
         clip-path: none;
     }
+
     .i-l-wrap {
       padding: 10px;
       align-items: center;
@@ -203,6 +205,7 @@ section {
       text-align: center;
       height: 100%;
     }
+
     .intro-desc{
       display: none;
     }
@@ -223,6 +226,7 @@ section {
         top: 2px; 
     }
 }
+
 .learn { 
     color: var(--clr-light);
     position: relative; 
