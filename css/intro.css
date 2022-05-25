@@ -69,6 +69,7 @@ section {
         "img title"
         "img subtitle";
     grid-template-columns: min-content max-content;
+    
 }
   
 .i-left {
@@ -173,9 +174,9 @@ section {
 }*/
   
 .intro__img {
-    width: 75%;
-    height: 70%;
-    margin-top: 3em;
+    width: 80%;
+    height: 80%;
+    
     grid-area: img;
     position: relative;
     z-index: 2;
